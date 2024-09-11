@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spellbook Maker</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <script src="src/app-preload.js" type="module"></script>
+</head>
+
+<body>
+  <nav-bar></nav-bar>
+  <section class="section">
+    <div class="columns is-centered is-vcentered">
+      <div class = "column is-3">
+        <label for ="search-box">Spell Search:</label>
+        <input type = "text" id = "search-box" name = "search-box" class="input">
+        <button id = "search-button" class = "button is-info">search</button>
+      </div>
+      <div class="column is-3">
+        <label for="class-select">Choose a class</label>
+        <select name="class-select" id="class-select" class = "select">
+          <option value = "warlock">warlock</option>
+          <option value = "bard">bard</option>
+          <option value = "paladin">paladin</option>
+          <option value = "druid">druid</option>
+          <option value = "wizard">wizard</option>
+          <option value = "cleric">cleric</option>
+          <option value = "fighter">fighter</option>
+          <option value = "ranger">ranger</option>
+          <option value = "rogue">rogue</option>
+          <option value = "sorcerer">sorcerer</option>
+          <option value = "monk">monk</option>
+          <option value = "barbarian">barbarian</option>
+        </select>
+      </div>
+      <div class="column is-3">
+        <label for="level-select">Choose a spell level</label>
+        <select name="level-select" id="level-select" class = "select">
+          <option value = "0">0</option>
+          <option value = "1">1</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+          <option value = "4">4</option>
+          <option value = "5">5</option>
+          <option value = "6">6</option>
+          <option value = "7">7</option>
+          <option value = "8">8</option>
+          <option value = "9">9</option>
+        </select>
+      </div>
+      <div class ="column is-3">
+        <label for="spellbook-select"> Choose a Spellbook</label>
+        <select name="spellbook-select" id="spellbook-select" class = "select">
+          <option>No Spellbooks Found</option>
+        </select>
+      </div>
+    </div>
+    <div class="columns is-centered is-vcentered">
+      <div class="column is-3">
+        <label for="spell-name-box">
+          Insert New Spellbook Name
+        </label>
+        <input type="text" id="spell-name-box" name="spell-name-box" class="input">
+      </div>
+      <div class="column is-3">
+        <button id="new-spell-button" class = "button is-info">Create New Spellbook</button>
+      </div>
+    </div>
+      <div class="columns is-multiline is-centered pt-6">
+        <div class="column is-3">
+          <div class="columns is-multiline" id="side-cards">
+
+          </div>
+        </div>
+        <div class="column is-9">
+          <div class="columns is-multiline " id="img">
+            
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+
+</html>

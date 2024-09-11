@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src = "src/community.js" type="module" ></script>
+    <title>Community Spellbook Maker</title>
+</head>
+<body>
+    <nav-bar></nav-bar>
+    
+    <div class="columns is-multiline has-text-centered mt-3">
+        <div class = "column is-6">
+            
+            <label for="spellbook-select"> Choose a Spellbook</label>
+            <div class = "select">
+        <select name="spellbook-select" id="spellbook-select">
+          <option>No Spellbooks Found</option>
+        </select>
+        </div>
+        </div>
+        <div class = "column is-6">
+            <button id="push-button" class = "button is-info">Push Spellbook</button>
+        </div>
+        <div class = "column is-12 is-vcentered">
+            <button id="prev-button" class = "button is-info">prev</button>
+            <label for="display-select">Display Amount:</label>
+            <div class = "select">
+                
+                <select name="display-select" id="display-select"  >
+                <option>
+                    5
+                </option>
+                <option>
+                    10
+                </option>
+                <option>
+                    20
+                </option>
+                <option>
+                    25
+                </option>
+                <option>
+                    50
+                </option>
+            </select>
+            </div>
+            
+        <button id="next-button" class = "button is-info">next</button>
+        </div>
+    </div>
+    <div class="columns is-multiline has-text-centered"  id = "card-section">
+    </div>
+</body>
+</html>

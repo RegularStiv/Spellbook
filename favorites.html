@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favorites Spellbook Maker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src = "src/favorite.js" type="module" ></script>
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+    <section class="section">
+        <div class="container">
+            <h1 class = "title is-size-2 has-text-centered">Favorites</h1>
+          <div class="columns is-centered is-multiline has-text-centered">
+            <div class="column is-12">
+              <label for="spellbooks">pick a spellbook</label>
+              <select name="spellbooks" id="spellbooks" class = "select">
+                <option>No Spellbooks</option>
+              </select>
+            </div>
+            <div class="column is-full has-text-centered">
+              <h4 class = "is-size-2 subtitle"></h4>
+              <p class = "columns is-multiline" id = "img"></p>
+            </div>
+          </div>
+        </div>
+      </section> 
+</body>
+</html>
