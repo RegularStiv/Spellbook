@@ -17,7 +17,6 @@ let spellbookKey = prefix + hashCode(document.querySelector("#spellbook-select")
 // mobile menu
 
 
-//#endregion
 document.querySelector("#class-select").onchange = filterSpells;
 document.querySelector("#level-select").onchange = filterSpells;
 document.querySelector("#search-button").onclick = filterSpellsButton;
@@ -54,6 +53,8 @@ function newSpellBook(){
         localStorage.setItem(hash, JSON.stringify([]));
     
 }
+
+//loads spells based on the filters applied
 function filterSpells() {
     document.querySelector("#img").innerHTML = " ";
     classSpells = [];
@@ -173,6 +174,7 @@ function init(){
     
     filterSpells();
 }
+//creates the actual cards and shows them on the screen
 const showSpell = spellObj =>{
     const spellCard = document.createElement('spell-card');
     spellCard.dataset.name = spellObj.name ?? "No name Found";
