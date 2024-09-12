@@ -57,7 +57,7 @@ const scoresChanged = (snapshot) => {
                 spellCardContainer.classList.add("column");
                 spellCardContainer.classList.add("is-one-fifth");
                 spellCardContainer.dataset.name = array[i].childData.title;
-                spellCardContainer.dataset.urls = array[i].childData.urls;
+                spellCardContainer.dataset.urls = array[i].childData.spellCards;
                 string = "";
                 array[i].childData.spellCards.forEach(element => {
                     string += `<p>${element.split("/").pop()}</p>`;
@@ -76,7 +76,7 @@ const scoresChanged = (snapshot) => {
                         spellCardContainer.classList.add("column");
                         spellCardContainer.classList.add("is-one-fifth");
                         spellCardContainer.dataset.name = array[i].childData.title;
-                        spellCardContainer.dataset.urls = array[i].childData.urls;
+                        spellCardContainer.dataset.urls = array[i].childData.spellCards;
                         string = "";
                         array[i].childData.spellCards.forEach(element => {
                         string += `<p>${element.split("/").pop()}</p>`;

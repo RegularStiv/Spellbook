@@ -221,7 +221,7 @@ const showSpell = spellObj =>{
         for(let i = 0; i < urlArray.length; i++)
         {
             if(spellCard.dataset.url == urlArray[i]){
-                spellCard.shadowRoot.querySelector("#fav-button").innerHTML = "favorited";
+                spellCard.shadowRoot.querySelector("#fav-button").innerHTML = "Favorited";
             }
         }
     }
